@@ -1,0 +1,160 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gold;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    float: left;
+    border-bottom: 3px solid gold;
+}
+
+header p{
+    width: 110px;
+    height: 70px;
+    padding-top: 40px;
+    margin-top: 16px;
+    margin-left: 16px;
+    text-align: center;
+    color: beige;
+    background-color:blueviolet;
+    border-radius: 500px;
+    box-shadow: 2px 2px 8px gold;
+}
+
+header p:hover{
+opacity: 1;
+transition: all 3s linear;
+transform: rotate(1800deg);
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: blueviolet;
+    float: left;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    /*float: left; nesse contexto justifica de verdade os conteúdos*/
+    margin: 0;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px; 
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.banner{
+    width: 100%;
+    height: 871px;
+    background-color: gold;
+}
+
+.content{
+    width: 100%;
+    height: 1000px;
+    background-color: blueviolet;
+    float: left;
+    background-image: url("https://data.1freewallpapers.com/download/lake-twilight-moon-dark-landscape-1600x900.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-attachment: fixed;
+}
+.content h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.233);
+    text-align: center;
+    width: 30%;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.contentSec{
+    width: 50%;
+    height: 500px;
+    background-color: silver;
+    float: left;
+    text-align: center;
+    font-size: 23px;
+}
+.contentSec table{
+    width: 100%;
+    height: auto;
+    border: 2px solid gainsboro;
+    border-collapse: collapse;
+}
+.contentSec tr :hover{
+    background-color: gray;
+    color: white;
+}
+
+.contentSec th{
+    border: 1px solid gainsboro;
+}
+
+.contentSec th,td{
+    border: 1px solid gainsboro;
+    padding: 6px;
+}
+
+.btn{
+    width: 50px;
+    height: 30px;
+    background-color: blueviolet;
+    color: black;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 2px;
+}
+
+.btn:hover{
+background-image: linear-gradient(to right,rgb(199, 199, 199) 3%,rgb(1,1,1));
+color:blueviolet;
+transition: all 0.5s linear;
+}
+
+.contentSec2{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(90, 90, 90);
+    float: left;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    float: left;
+}

@@ -1,0 +1,65 @@
+.content{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right,rgb(238, 217, 34) 3%,rgb(128, 28, 185));
+    color:blueviolet;
+    transition: all 0.5s linear;
+}
+
+.hoverzoom{
+    position: relative;
+    width: 33%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+.hoverzoom img{
+    width: 100%;
+    height: 100%;
+}
+
+.hoverzoom:hover img{
+    transform: scale(1.4);
+    transition: all 1.5s;
+}
+
+.retina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    padding: 30px;
+    background:none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+
+.hoverzoom:hover .retina{
+    opacity: 1;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.hoverzoom .retina p{
+    color: white;
+    margin-top: 25%;
+    width: 90%;
+    position: relative;
+    left: -33px;
+}
+
+.hoverzoom .retina a{
+    display: block;
+    width: 150px;
+    background-color: gold;
+    border: 1px solid goldenrod;
+    border-radius: 4px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+}
